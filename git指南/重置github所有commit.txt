@@ -1,0 +1,7 @@
+备份本地.git下的config文件
+1.删除本地.git
+2.初始化 git init
+3.恢复config文件
+4.添加文件git add -A
+5.提交git commit -m 'update'
+6.推送 git push -f origin master
