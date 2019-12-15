@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>子元素选择器</title>
+    <style>
+        #colorR>p{
+            color:gold; /*只会查找子标签，不查找嵌套后的标签*/
+        }
+        .line5{
+            color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <!-- 含义：找到指定标签中所有的直接子元素，然后设置其属性 -->
+    <p>this is line 1</p>
+    <div id="colorR">
+        <p>this is line 2</p>
+        <p>this is line 3</p>
+        <ul>
+            <li>
+                <p id="line4">this is line 4</p>
+                <p class="line5">this is line 5</p>
+            </li>
+        </ul>
+        <p id="line6">this is line 6</p>
+    </div> 
+    <p>this is line 7</p>
+</body>
+</html>

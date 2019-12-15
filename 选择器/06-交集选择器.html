@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>交集选择器</title>
+</head>
+    <style>
+        p.line{
+            color: red;
+        }
+        .line#t{
+            color: aqua;
+        }
+    </style>
+<body>
+    <!-- 含义：给所有选择器选中的标签中，相交的那部分标签设置属性 -->
+    <p>this is line 1</p>
+    <p>this is line 2</p>
+    <p class="line" id="t">this is line 3</p>
+    <p class="line">this is line 4</p>
+    <p class="line">this is line 5</p>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>盒子模型联系</title>
+    <style>
+        *{
+            padding: 0;margin: 0;
+        }
+        /* 内边距实现 */
+        /* .box1{
+            width: 500px;
+            height: 500px;
+            background-color: pink;
+            padding: 150px;
+            box-sizing: border-box;
+        }
+        .inbox{
+            width: 200px;
+            height: 200px;
+            background-color: green;
+        } */
+        /* 外边距实现 */
+        .box1{
+            width: 500px;
+            height: 500px;
+            background-color: red;
+            border:solid;
+        }
+        .inbox{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            margin: 150px auto;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h2>——将一个宽高200的盒子置于宽高500的盒子 水平垂直居中（通过padding实现）</h2>
+    <h2>如果两个盒子是嵌套关系，当设置了里面盒子的顶部外边距margin-top时<br>
+        外面盒子也会被顶下去，若想消除这种现象可以给外面盒子设置边框border属性<br>
+        ——在企业开发中，一般情况下如果要控制嵌套关系的盒子之间距离时，应该首先考虑padding，其次在考虑margin<br>
+        ——margin本质上用于控制兄弟标签关系之间间隙<br>
+        水平居中auto(垂直方向无效)用法：
+        在嵌套关系的盒子中，可以margin:0 auto;的方式水平居中
+    </h2><hr>
+    <div class="box1">
+            <div class="inbox"></div>
+    </div>
+    
+  
+
+    
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>盒子居中和内容居中</title>
+    <style>
+        .father{
+            width: 300px;
+            height: 200px;
+            background-color: red;
+            text-align: center;
+        }
+        .son{
+            width: 300px;
+            height: 200px;
+            background-color: red;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>盒子居中和内容居中的区别</h1>
+    <h2>text-align:center; VS margin:0 auto;</h2>
+    <h2>————text-align:center;设置盒子中内容/图片水平居中</h2>
+    <div class="father">
+        <p>这是文字</p>
+        <img src="../imgs/33.png" alt="">
+    </div>
+    <h2>————margin:0 auto;让盒子自己水平居中</h2>
+    <div class="son">
+        <p>这是文字</p>
+        <img src="../imgs/33.png" alt="">
+    </div>
+</body>
+</html>

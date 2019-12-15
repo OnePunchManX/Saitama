@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>背景图片和插入图片的区别</title>
+    <style>
+        div{
+            width: 300px;
+            height: 300px;
+        }
+        .box1{
+            background-image: url(../imgs/33.png);
+            background-repeat: no-repeat;
+            background-position: right bottom;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="box1"><h1>这里是背景图片↘</h1>背景图片有定位属性</div>
+    <div class="box2">
+        <img src="../imgs/33.png" alt="test">←这里是插入图片
+    </div>
+</body>
+</html>

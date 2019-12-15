@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>后代选择器</title>
+    <style>
+        #colorR p{
+            color:fuchsia; /*colorR所有的后代标签 嵌套标签*/
+        }
+        #colorR #line4{
+            color:red;
+        }
+        #colorR .line5{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- 含义：找到指定标签的所有后代标签，设置其属性 -->
+    <p>this is line 1</p>
+    <div id="colorR">
+        <p>this is line 2</p>
+        <p>this is line 3</p>
+        <ul>
+            <li>
+                <p id="line4">this is line 4</p>
+                <p class="line5">this is line 5</p>
+                <p>this is line 6</p>
+            </li>
+        </ul>
+        <p id="line7">this is line 7</p>
+    </div> 
+    <p>this is line 8</p>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>消除默认边距</title>
+    <style>
+        /* *{
+            margin: 0;
+            padding: 0;
+        } */
+        body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}
+        .word{
+            width: 610px;
+            height: 110px;
+            border: 1px solid black;
+            background-color: #cdcdcd;
+        }
+    </style>
+</head>
+<body>
+    <div class="word">
+        <p>葬爱就是一种非主流文化的常用词。是当今网络流行术语。且流行于非主流杀马特之中。葬，即埋葬，爱，即爱情，翻译成外语就是bury love 。</p>
+    </div>
+    <h1>为什么要清空默认边距(外边距和内边距)？</h1>
+    <h2>——在企业开发中，为了更好的控制盒子的位置和计算盒子的宽高，在编写代码之前，一般先清除默认边距</h2>
+    <h1>如何清除默认边距？</h1>
+    <h2>①*{
+            margin: 0;
+            padding: 0;
+        }   ←通配符选择器*会遍历当前页面中所有的标签，所以性能不好<br>
+        ②body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}<br>或者直接引入雅虎api的css ——企业开发中，经常使用这种来消除
+    </h2>
+
+</body>
+</html>

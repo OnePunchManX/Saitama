@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>属性选择器</title>
+    <style>
+        p[class=cc]{
+            color: red;
+        }
+        img[alt^="abc"]{  /*以abc开头的*/
+            color: aquamarine;
+        }
+        img[alt$="c"]{    /*以c结尾的*/
+            color: blue;
+        }
+        img[alt*="23"]{   /*包含23的*/  
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <p class="cc">this is line 1</p>
+    <p>this is line 2</p>
+    <p id="ident" class="cc">this is line 3</p>
+    <p class="abc">this is line 4</p>
+    <p>this is line 5</p>
+    <h1>选择器延伸</h1>
+    <img src="./属性选择器.png">
+    <img src="" alt="abc123">
+    <img src="" alt="abc 666">
+    <img src="" alt="a1b2c3 abc">
+    <img src="" alt="123abc">
+    <img src="" alt="acdefg">
+    <img src="" alt="a23bcb">
+    <img src="" alt="a2bb2b3">
+</body>
+</html>

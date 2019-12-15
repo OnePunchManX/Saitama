@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>!important</title>
+    <style>
+        *{
+            color: aqua;
+        }
+        #para{
+            color: red;
+        }
+        .test{
+            color: blue !important;
+        }
+        p{
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+    <h1>!important</h1>
+    <p>用于提升某个直接选中的标签的选择器中某个属性的优先级<br>
+        可以将被指定属性的优先级提升为最高<br><br>
+    </p>
+
+    <ul>
+        <li>
+            <p id="para" class="test">段落测试</p>
+        </li>
+    </ul>
+</body>
+</html>
