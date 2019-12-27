@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>浮动元素的排序规则</title>
+    <style>
+        .bodys {
+            width: 1200px;
+            height: 1800px;
+            border: 1px solid black;
+            background-color: #efefef;
+            margin: 0 auto;
+        }
+        /* 1 */
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            float: left;
+        }
+
+        .box2 {
+            width: 150px;
+            height: 150px;
+            background: red;
+            float: left;
+        }
+
+        .box3 {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            float: left;
+        }
+        /*2 */
+        .nofloat1 {
+            clear: both;
+        }
+
+        .box4 {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            float: left;
+        }
+
+        .box5 {
+            width: 150px;
+            height: 150px;
+            background: red;
+            float: right;
+        }
+
+        .box6 {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            float: left;
+        }
+
+        .box7 {
+            width: 250px;
+            height: 250px;
+            background-color: pink;
+            float: right;
+        }
+
+        /*3 */
+        .box8 {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+        }
+
+        .box9 {
+            width: 150px;
+            height: 150px;
+            background: red;
+            float: left;
+        }
+
+        .box10 {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            float: left;
+        }
+
+        .box11 {
+            width: 250px;
+            height: 250px;
+            background-color: pink;
+        }
+        .test{
+            width: 800px;
+            height: 400px;
+            border: 1px solid red;
+        }
+        /* 4 */
+        .box12 {
+            width: 80px;
+            height: 200px;
+            background: red;
+            float: left;
+        }
+
+        .box13 {
+            width: 400px;
+            height: 80px;
+            background-color: blue;
+            float: left;
+        }
+
+        .box14 {
+            width: 300px;
+            height: 150px;
+            background-color: pink;
+            float: left;
+        }
+        /* 5 */
+
+        .box15{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            float: left;
+        }
+        .box16{
+            width: 300px;
+            height: 300px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bodys">
+        <h1>1、相同方向上的浮动元素，先浮动的元素会显示在前面，后则在后</h1>
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="nofloat1">
+            <h1>2、不同方向上的浮动元素，左浮动找左浮动，右则找右 /clear: both;清除浮动</h1>
+            <div class="box4">4</div>
+            <div class="box5">5</div>
+            <div class="box6">6</div>
+            <div class="box7">7</div>
+        </div>
+        <div class="nofloat1"></div>
+        <h1>3、浮动元素浮动之后的位置，由浮动元素浮动之前在标准流中的位置来决定</h1>
+        <div class="box8">8</div>
+        <div class="box9">9</div>
+        <div class="box10">10</div>
+        <div class="box11">11</div>
+
+        <h1>4、浮动元素的贴靠现象 父元素宽高不够会往下挤</h1>
+        <div class="test">
+            <div class="box12">12</div>
+            <div class="box13">13</div>
+            <div class="box14">14</div>
+        </div>
+
+        <h1>5、浮动元素的字围效果</h1>
+        <div class="ziwei">
+            <div class="box15">15</div>
+            <div class="box16">16<P>←不会覆盖文字</P></div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
+

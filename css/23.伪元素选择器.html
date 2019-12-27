@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>伪元素选择器</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+        div::before{
+            content: "爱你";
+            width: 50px;
+            height: 20px;
+            background-color: pink;
+            display: block;
+            visibility: hidden;/*隐藏添加的子元素*/
+        }
+        div::after{
+            content: "么么哒";
+            width: 80px;        
+            height: 20px;
+            display: block;
+            background-color: blanchedalmond;
+        }
+    </style>
+</head>
+<body>
+    <h1>给指定标签的内容前/后添加一个子元素</h1>
+    <div class="box1">
+        我是文字
+    </div>
+</body>
+</html>
