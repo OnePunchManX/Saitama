@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>19.浮动流的基本概念</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            float: left;
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>1.浮动流是一种"半脱离标准流"的排版方式</h1>
+    <h1>2.浮动流只有一种排版方式，就是水平排版<br>只能设置某个元素左对齐或者右对齐</h1>
+    <h2>注意点：浮动流没有居中对齐，没有center取值 不可以使用margin: 0 auto;</h2>
+    <h2>在浮动流中是不区分块级元素/行内元素/行内块级元素的，无论是什么都可以水平排版,都可以设置宽高</h2>
+    <span class="box1"></span>
+    <span class="box2"></span>
+</body>
+</html>

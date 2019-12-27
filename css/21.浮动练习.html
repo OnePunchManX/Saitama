@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>浮动练习</title>
+    <style>
+         body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}
+        .header{
+            width: 980px;
+            height: 100px;
+            /* background-color: red; */
+            margin: 0 auto;
+        }
+        .content{
+            width: 980px;
+            height: 400px;
+            /* background-color: green; */
+            margin: 10px auto;
+        }
+        .footer{
+            width: 980px;
+            height: 40px;
+            background-color: brown;
+            margin: 0 auto;
+        }
+        /* header */
+        .header .logo{
+            width: 250px;
+            height: 100px;
+            background-color: pink;
+            float: left;
+        }
+        .header .language{
+            width: 150px;
+            height: 50px;
+            background-color: blue;
+            float: right;
+        }
+        .header .nav{
+            width: 650px;
+            height: 50px;
+            background-color: purple;
+            float: right;
+        }
+        /* content */
+        .content .content-left{
+            width: 320px;
+            height: 400px;
+            background-color: yellow;
+            float: left;
+        }
+        .content .content-right{
+            width: 650px;
+            height: 400px;
+            /* background-color: red; */
+            float: right;
+        }
+        .content .content-right .content-right-header{
+            width: 650px;
+            height: 350px;
+            /* background-color: skyblue; */
+        }
+        .content .content-right .content-right-header .left{
+            float: left;
+        }
+        .content .content-right .content-right-header .left .left1{
+            width: 400px;
+            height: 200px;
+            background-color: rgb(212, 135, 235);
+        }
+        .content .content-right .content-right-header .left .left2{
+            width: 400px;
+            height: 140px;
+            background-color: blue;
+            margin-top: 10px;
+        }
+        .content .content-right .content-right-header .right{
+            width: 240px;
+            height: 350px;
+            background-color: green;
+            float: right;
+        }
+        .content .content-right .content-right-footer{
+            width: 650px;
+            height: 40px;
+            background-color: saddlebrown;
+            margin-top: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo"></div>
+        <div class="language"></div>
+        <div class="nav"></div>
+    </div>
+    <div class="content">
+        <div class="content-left"></div>
+        <div class="content-right">
+            <div class="content-right-header">
+                <div class="left">
+                    <div class="left1"></div>
+                    <div class="left2"></div>
+                </div>
+                <div class="right"></div>
+            </div>
+            <div class="content-right-footer"></div>
+        </div>
+    </div>
+    <div class="footer"></div>
+</body>
+</html>
