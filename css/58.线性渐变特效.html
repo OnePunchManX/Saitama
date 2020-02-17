@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        body{
+            background-color: black;
+        }
+        .box{
+            width: 600px;
+            height: 200px;
+            font-size: 150px;
+            line-height: 200px;
+            font-weight: bold;
+            margin: 200px auto;
+            position: relative;
+            color: rgb(255, 255, 255,0.3);
+            background-image: linear-gradient(-45deg,transparent 100px,white 150px,white 180px,transparent 220px);
+            background-position: -450px;
+            background-repeat: no-repeat;
+            /* 私有属性 */
+            -webkit-background-clip:text;
+            animation: sport 2s linear normal infinite;
+        }
+            @keyframes sport{
+                from{
+                    background-position: -450px;
+                }
+                to{
+                    background-position: 400px;
+                }
+            }
+    </style>
+</head>
+<body>
+    <div class="box">富川家苑</div>
+</body>
+</html>

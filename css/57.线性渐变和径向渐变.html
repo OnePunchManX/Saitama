@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>线性渐变</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        .box{
+            width: 400px;
+            height: 200px;
+            border: 1px solid black;
+            box-sizing: border-box;
+            margin: 200px auto;
+            /* 默认上至下 */
+            /* background: linear-gradient(red,green); */
+            /* background:linear-gradient(to top,red,green); */
+            /* background:linear-gradient(to left,red,green); */
+            /* background:linear-gradient(to left,red,green); */
+            /* background:linear-gradient(to top right,red,green); */
+            /* background:linear-gradient(to right,red,green); */
+            /* background:linear-gradient(to right,red 200px,green); */
+            background:linear-gradient(to right,red 100px,green 150px);
+        }
+        .box1{
+            width: 400px;
+            height: 200px;
+            border: 1px solid black;
+            box-sizing: border-box;
+            margin: 200px auto;
+            /* background:radial-gradient(red,green); */
+            /* background:radial-gradient(at top left,red,green); */
+            /* background:radial-gradient(at 300px 100px,red,green); */
+            /* background:radial-gradient(100px,red,green); */
+            background:radial-gradient(100px at 300px 100px,red,green);
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box1"></div>
+</body>
+</html>

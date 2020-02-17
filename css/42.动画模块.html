@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>动画模块</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        .box1{
+            background-color: red;
+            width: 150px;
+            height: 150px;
+            animation-name: Dva;
+            animation-duration: 2s;
+
+            /* 延迟动画 */
+            /* animation-delay: 2s; */
+
+            /* 动画执行速度 */
+            /* animation-timing-function: linear; */
+
+            /* 动画播放次数 */
+            animation-iteration-count: infinite;
+
+            /* 动画往返执行   normal*/
+            animation-direction: alternate;
+
+            /* 连写 */
+            /* animation: 动画名称 动画时长 动画运动速度 延迟时间 执行次数; */
+            /* animation: move 3s; */
+        }
+        
+        .box1:hover{
+            /* 动画暂停 paused*/
+            animation-play-state: paused;
+        }
+        @keyframes Dva{
+            from{
+                margin-left: 0;
+                /* background-color: rgb(255, 255, 255); */
+            }
+            to{
+                margin-left: 500px;
+                /* background-color: rgb(255, 0, 0); */
+            }
+        }
+
+
+        .box2{
+            width: 150px;
+            height: 150px;
+            left: 0;
+            top: 0;
+            position: relative;
+            background-color: yellow;
+            animation-name: move;
+            animation-duration: 5s;
+            animation-direction: alternate;
+            animation-iteration-count: 2;
+        }
+        @keyframes move{
+            0%{
+                left: 0;
+                top: 0;
+            }
+            25%{
+                left: 500px;
+                top: 0;
+            }
+            50%{
+                left: 500px;
+                top: 500px;
+            }
+            75%{
+                left: 0px;
+                top: 500px;
+            }
+            100%{
+                left: 0;
+                top: 0;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="box1"></div>
+
+    <div class="box2"></div>
+</body>
+</html>

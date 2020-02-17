@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>背景图片定位区域</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul li{
+            list-style: none;
+            padding: 50px;
+            width: 200px;
+            height: 200px;
+            border: 20px dashed black;
+            float: left;
+            margin: 20px;
+            font-size: 30px;
+            text-align: center;
+            line-height: 200px;
+        }
+        ul li:nth-child(1){
+            /* 默认从padding定位背景图片 */
+            background: url("../imgs/33.png") no-repeat;
+        }
+        ul li:nth-child(2){
+            /* 从padding定位背景图片 */
+            background: url("../imgs/33.png") no-repeat;
+            background-origin: padding-box;
+        }
+        ul li:nth-child(3){
+            /* 从border定位背景图片 */
+            background: url("../imgs/33.png") no-repeat;
+            background-origin: border-box;
+        }
+        ul li:nth-child(4){
+            /*从content内容区域定位背景图片 */
+            background: url("../imgs/33.png") no-repeat;
+            background-origin: content-box;
+
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li>默认</li>
+        <li>padding</li>
+        <li>border</li>
+        <li>content</li>
+    </ul>
+</body>
+</html>

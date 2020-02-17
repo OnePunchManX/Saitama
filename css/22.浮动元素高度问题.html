@@ -10,16 +10,21 @@
             margin: 0;
             padding: 0;
         }
+        h2{
+            clear: both;
+        }
         .box1{
             border: 1px solid red;
         }
         .box2{
             background-color: red;
+            overflow: hidden;
+            margin-bottom: 30px;
         }
         .box3{
             background-color: green;
-            clear: left;
-            margin-top: 20px;
+            /* clear: left; */
+            /* margin-top: 20px; */
         }
         .box2 p{     
             background-color: skyblue;
@@ -31,6 +36,25 @@
             width: 100px;
             float: left;
         }
+        /* ------------- */
+        .overflow-test{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            overflow: hidden;
+        }
+        .overflow-test2{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            overflow: hidden;
+        }
+        .test{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
@@ -38,6 +62,7 @@
         <h1>2.在浮动流中浮动的元素不能撑起父元素的高度</h1>
         <h2>①清除浮动方式一：<br>——给前一个父元素设置高度(用得少)</h2>
         <h2>②清除浮动方式二：<br>——设置clear:both/left/right/</h2>
+        <h2>③清除浮动方式三：<br>——设置overflow:hidden</h2>
         <div class="box1">内容会撑起div高度</div>
         <div class="box2">
             <p>我是文字1</p>
@@ -49,5 +74,12 @@
             <p>我是文字2</p>
             <p>我是文字2</p>
         </div>
+        <h2>overflow的三种作用：</h2>
+        <h2>①可以将超出标签范围的内容裁剪掉</h2>
+        <div class="overflow-test">我是谁谁谁谁谁谁谁谁谁谁谁谁谁谁谁谁谁谁谁谁谁谁谁谁谁谁谁谁谁谁谁谁谁谁谁谁谁谁谁谁谁谁谁谁谁谁</div>
+        <h2>②清除浮动</h2>
+        <h2>③可以通过overflow:hidden让里面的盒子设置margin-top之后，外部盒子不被顶下去</h2>
+        <div class="overflow-test2"><div class="test"></div></div>
+
 </body>
 </html>

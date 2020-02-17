@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>绝对定位注意点</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* 如果一个绝对定位的元素是以body为参考点，则是以网页首屏的宽度和高度为参考，而不是整个页面的宽高度 */
+        /* .box1{
+            width: 100px;
+            padding: 100px;
+            background-color: red;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+        .box2{
+            width: 2800px;
+            height: 100px;
+            background-color: green;
+        }
+        .box3{
+            width: 100px;
+            height: 1600px;
+            background-color: yellow;
+        } */
+
+        /* 一个绝对定位的元素会忽略祖先元素的padding */
+        .box1{
+            width: 150px;
+            height: 150px;
+            background-color: green;
+            border: 10px solid black;
+            padding: 10px;
+            position:relative;
+        }
+        .box2{
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- 如果一个绝对定位的元素是以body为参考点，则是以网页首屏的宽度和高度为参考，而不是整个页面的宽高度  -->
+    <!-- <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div> -->
+
+    <!-- 一个绝对定位的元素会忽略祖先元素的padding -->
+        <div class="box1">
+            <div class="box2"></div>
+        </div>
+
+
+</body>
+</html>

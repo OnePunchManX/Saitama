@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        .father1{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            position: relative;
+            z-index:2;
+        }
+        .father2{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            position: relative;
+            z-index: 1;
+        }
+        .son1{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            position: absolute;
+            left: 200px;
+            top: 200px;
+            /* z-index: 2; */
+        }
+        .son2{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            position: absolute;
+            left: 250px;
+            top: 50px;
+            /* z-index: 1; */
+        }
+    </style>
+</head>
+<body>
+    <!-- <h2>默认情况下所有的元素都有一个默认的z-index属性，取值是0
+        z-index属性的作用是专门用于控制定位流元素的覆盖关系的
+    </h2>
+    <h3>1.默认情况下定位流的元素会盖住标准流的元素<br>
+        2.默认情况下定位流的元素后面编写的会盖住前面编写的<br>
+        3.如果定位流的元素设置了z-index属性，那么谁的z-index属性大，谁就显示在上面
+    </h3>
+    <h3>从父现象：<br>
+        1、如果两个元素的父元素都没有设置z-index属性，那么谁的<br>z-index属性大的谁就显示在上面<br>
+        2、如果两个元素的父元素都设置了z-index属性，那么子元素的<br>z-index属性就会失效，也就是谁的父元素的z-index属性大的就会显示在上面
+    </h3> --> 
+    <!-- --------↑ 貌似没用了 -->
+    <div class="father1">
+        <div class="son1"></div>
+    </div>
+    <div class="father2">
+        <div class="son2"></div>
+    </div>
+</body>
+</html>

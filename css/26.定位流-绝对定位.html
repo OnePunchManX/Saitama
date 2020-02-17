@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>定位流-绝对定位</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+
+        .box2 {
+            width: 100px;
+            height: 100px;
+            background-color: purple;
+            position: absolute;
+            left: 50px;
+            margin-top: 10px;
+        }
+
+        .box3 {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+
+        }
+
+        .box4{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+        .box5{
+            width: 150px;
+            height: 150px;
+            background-color: green;
+            position: relative;
+        }
+        .box6{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+
+        .box7{
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>绝对定位</h2>
+    <h2>脱离标准流且不区分块级元素/行内元素/行内块级元素</h2>
+    <h2>规律1.默认情况下所有的绝对定位的元素，无论有没有祖先元素都会以body为参考点</h2>
+    <h2>规律2.如果一个绝对定位的元素有祖先元素，并且祖先元素也是定位流<br>那么这个绝对定位的元素就会以定位流的祖先元素作为参考点</h2>
+    <h2>规律2.1只要是这个绝对定位元素的祖先元素都可以</h2>
+    <h2>规律2.2指的定位流是指绝对定位/相对定位/固定定位</h2>
+    <h2>规律2.3定位流中只有静态定位不行</h2>
+    <h2>规律3.如果一个绝对定位的元素有祖先元素，且祖先元素也是定位流，并且祖先元素中有多个元素都是定位流那么这个绝对定位的元素会以离它最近的定位流祖先元素为参考点</h2>
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+    <p>  -----------------------分割线-------------------------------</p>
+    <div class="box4">4</div>
+    <div class="box5">5
+        <div class="box6">6</div>
+    </div>
+    <div class="box7">7</div>
+</body>
+
+
+</html>

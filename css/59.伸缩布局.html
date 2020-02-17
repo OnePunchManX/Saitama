@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        ul{
+            width: 400px;
+            border: 1px solid black;
+            margin: 200px auto;
+            /* overflow: hidden; */
+            /* 伸缩布局中默认水平方向是主轴，起点在容器的最左边 */
+            display: flex; /*ul→伸缩容器*/
+            flex-direction: row;/*默认*/
+        }
+        li{
+            list-style: none;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            text-align: center;
+            line-height: 100px;
+            /* display: inline-block; */
+            /* float: left; */
+        }
+        li:nth-child(2){
+            background-color: green;
+        }
+        li:nth-child(3){
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+</body>
+</html>

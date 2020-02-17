@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical-align</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        div{
+            background-color: skyblue;
+            margin: 200px auto;
+            width: 400px;
+            font-size: 40px;
+            line-height: 100px;
+            vertical-align:;
+        }
+        img{
+            /* 默认情况图片和一行文字的基线对齐(最短文字的底部) */
+            /* vertical-align: baseline;默认 */
+            /* vertical-align: top; */
+            /* vertical-align: bottom; */
+            /* vertical-align: text-top; */
+            /* vertical-align: text-bottom; */
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        vertical-align:设置元素的垂直对齐方式 设置给需要对齐元素的本身
+        text-align:是设置给需要对齐元素的父元素
+    -->
+    <div>锄禾日当午Abzcxp<img src="../imgs/hot1.gif" </div>
+</body>
+</html>

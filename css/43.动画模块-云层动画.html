@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        li{
+            list-style: none;
+            height: 100%;
+            width: 400%;
+            position: absolute;
+        }
+
+        ul{
+            height: 500px;
+            animation: bgc 30s infinite alternate;
+            position: relative;
+            overflow: hidden;
+        }
+        @keyframes bgc{
+            from{
+                background-color: skyblue;
+            }
+            to{
+                background-color: black;
+            }
+        }
+        ul li:nth-child(1){
+            background-image: url("../imgs/cloud_one.png");
+            animation: one 30s infinite alternate;
+        }
+        @keyframes one{
+            from{
+                margin-left: 0;
+            }
+            to{
+                margin-left: -100%;
+            }
+        }
+
+        ul li:nth-child(2){
+            background-image: url("../imgs/cloud_two.png");
+            animation: two 30s infinite alternate;
+        }
+        @keyframes two{
+            from{
+                margin-left: 0;
+            }
+            to{
+                margin-left: -200%;
+            }
+        }
+        ul li:nth-child(3){
+            background-image: url("../imgs/cloud_three.png");
+            animation: three 30s infinite alternate;
+        }
+        @keyframes three{
+            from{
+                margin-left: 0;
+            }
+            to{
+                margin-left: -300%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</body>
+</html>

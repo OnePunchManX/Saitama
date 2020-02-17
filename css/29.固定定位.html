@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>固定定位</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            position: fixed;
+        }
+        .box3{
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+
+        }
+        .box4{
+            width: 100px;
+            height: 1500px;
+            background-color: yellow;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- 固定定位的元素脱离标准流，不会占用标准流中的空间
+    固定定位和绝对定位一样不区分行内/块级/行内块级 -->
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+</body>
+</html>

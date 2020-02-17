@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>子绝父相</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        ul{
+            background-color: red;
+            height: 50px;
+            width: 800px;
+            margin: 0 auto;
+            margin-top: 100px;
+        }
+        ul li{
+            list-style: none;
+            float: left;
+            background-color: #ccc;
+            line-height: 50px;
+            width: 100px;
+            text-align: center;
+        }
+
+        ul li:nth-child(4){
+            background-color: rgb(223, 223, 223);
+            position: relative;
+        }
+        ul li img{
+            position: absolute;
+            left: 40px;
+            top: -11px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>服装城</li>
+        <li>美妆馆</li>
+        <li>京东超市</li>
+        <li>全球购
+            <img src="../imgs/hot1.gif" alt="#">
+        </li>
+        <li>闪购</li>
+        <li>团购</li>
+        <li>拍卖</li>
+        <li>金融</li>
+    </ul>
+</body>
+</html>

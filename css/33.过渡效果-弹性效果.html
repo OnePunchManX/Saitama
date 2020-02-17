@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>弹性效果</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        .box1{
+            margin-top: 100px;
+            text-align: center;
+            background-color: red;
+            height: 100px;
+        }
+        span{
+            font-size: 50px;
+            line-height: 100px;
+            transition: font-size 3s,margin-left 3s;
+        }
+        .box1:hover span{
+            font-size: 80px;
+            margin-left: 20px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <span>带</span>
+        <span>你</span>
+        <span>飞</span>
+        <span>︿(￣︶￣)︿</span>
+        <span>！</span>
+    </div>
+</body>
+</html>

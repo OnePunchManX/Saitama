@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS3新特性-过渡效果</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transition-property: width,height,background-color;
+            transition-duration: 5s,5s,5s;
+            /*过度动画开始延迟时间*/
+            transition-delay:2s 
+        }
+        .box:hover{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(192, 207, 255);
+        }
+
+        .speed{
+            width: 700px;
+            height: 500px;
+            background-color: pink;
+            margin: 0 auto;
+            border: 1px solid black;
+        }
+        .speed ul li{
+            width: 50px;
+            height: 50px;
+            list-style: none;
+            background-color: red;
+            margin-top: 40px;     
+            /* transition: 过渡属性 过渡市场 运动速度 延迟时间 */
+            transition: margin-left 5s linear 0s,background-color 5s 1s;
+            /* transition-property: margin-left; 
+            transition-duration: 10s; */
+
+            /* 也可以这么写所有的属性 但不能分别设置时间等属性了
+            transition: all 5s; */
+        }
+        
+        .speed ul:hover li{
+            background-color: white;
+            margin-left: 650px;
+        }
+        /* 可以用连写模式 */
+        /* ul li:nth-child(1){
+            transition-timing-function: linear;
+        }
+        ul li:nth-child(2){
+            transition-timing-function: ease;
+        }
+        ul li:nth-child(3){
+            transition-timing-function: ease-in;
+        }
+        ul li:nth-child(4){
+            transition-timing-function: ease-out;
+        }
+        ul li:nth-child(5){
+            transition-timing-function: ease-in-out;
+        }  */
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="speed">
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ul>
+    </div>
+</body>
+</html>

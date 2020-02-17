@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            margin-top: 100px;
+            box-sizing: border-box;
+            border: 70px solid black;
+            border-image-source: url("../imgs/border.jpg");
+            border-image-slice: 70 70 70 70;
+            background-color: skyblue;
+            /* 中间填充 */
+            /* border-image-slice: 70 70 70 70 fill; */
+            /* 图片显示的宽度 */
+            /* border-image-width: 20px; */
+            /* 图片显示方式 默认拉伸 */
+            border-image-repeat: stretch;
+            /* 图片显示方式 平铺 */
+            /* border-image-repeat: repeat; */
+            /* 图片显示方式 平铺加拉伸*/
+            /* border-image-repeat: round; */
+
+            /* 边框图片需要向外移动 */
+            /* border-image-outset: 10px 30px 50px 70px; */
+
+            /* 连写格式 */
+            /* border-image: 资源地址 切割方式 填充方式; */
+            /* border-image: url("../imgs/border.jpg") 70 repeat; */
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

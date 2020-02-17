@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>阴影</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box1{
+            width: 150px;
+            height: 150px;
+            border: 1px solid #ccc;
+            margin: 100px auto;
+            background-color: red;
+            /* box-shadow:水平偏移 垂直偏移 模糊度 阴影拓展 阴影颜色 内外阴影 */
+            box-shadow: 10px 10px 10px;
+        }
+        .box2{
+            width: 150px;
+            height: 150px;
+            border: 1px solid #ccc;
+            margin: 200px auto;
+            background-color: red;
+            /* box-shadow:水平偏移 垂直偏移 模糊度 阴影拓展 阴影颜色 内外阴影 */
+            box-shadow: 10px 10px 10px;
+            text-align: center;
+            line-height: 150px;
+            font-size: 30px;
+            text-shadow: 3px 3px 1px white;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2">真好吃</div>
+</body>
+</html>

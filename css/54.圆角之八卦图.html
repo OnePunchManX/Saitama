@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>八卦图</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        .all{
+            width: 400px;
+            height: 400px;
+            margin: 0 auto;
+            margin-top: 100px;
+            position: relative;
+            box-sizing: border-box;
+        }
+        .top{
+            width: 400px;height: 200px;
+            border: 1px solid black;
+            margin: 0 auto;
+            border-top-left-radius: 200px;
+            border-top-right-radius: 200px;
+            box-sizing: border-box;
+            background-color: skyblue;
+            border-bottom: none;
+        }
+        .bottom{
+            width: 400px;height: 200px;
+            border: 1px solid black;
+            margin: 0 auto;
+            border-bottom-left-radius: 200px;
+            border-bottom-right-radius: 200px;
+            box-sizing: border-box;
+            border-top: none;
+            background-color: red;
+        }
+        .left{
+            width: 199.5px;
+            height: 199.5px;
+            background-color: skyblue;
+            border: 50px solid red;
+            margin: 0 auto;
+            position: absolute;
+            box-sizing: border-box;
+            left: 0;
+            top:100px;
+            border-radius: 100px;
+        }
+        .right{
+            width: 199.5px;
+            height: 199.5px;
+            background-color: red;
+            border: 50px solid skyblue;
+            margin: 0 auto;
+            position: absolute;
+            box-sizing: border-box;
+            right: 0;
+            top:100px;
+            border-radius: 100px;
+        }
+        .love{
+            width: 350px;
+            height: 400px;
+            margin: 0 auto;
+            position: relative;
+        }
+        .love_left{
+            width: 200px;height: 200px;
+            background-color: red;
+            border-radius: 100px;
+            position: absolute;
+        }
+        .love_right{
+            width: 200px;height: 200px;
+            background-color: red;
+            border-radius: 100px;
+            position: absolute;
+            right: 0;
+        }
+        .love_bottom{
+            width: 200px;height: 200px;
+            background-color: red;
+            bottom: 0;
+            position: absolute;
+            /* 企业开发中推荐使用下面方式实现垂直或水平居中 */
+            left: 50%;
+            transform: translateX(-50%) rotate(45deg);
+            /* 垂直 */
+            /* top:50%;
+            transform: translateY(-50%); */
+            bottom: 125.5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="all">
+        <div class="top"></div>
+        <div class="bottom"></div>
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+    <div class="love">
+        <div class="love_left"></div>
+        <div class="love_right"></div>
+        <div class="love_bottom"></div>
+    </div>
+</body>
+</html>
